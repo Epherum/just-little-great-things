@@ -10,9 +10,23 @@
     font-size: 9vw;
     color: #f7d395;
   }
+  .red-circle {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-30%, -50%) scale(0);
+    top: 300px;
+    width: 242vmax;
+    height: 242vmax;
+
+    z-index: -2;
+    background-color: #ad807c;
+    border-radius: 50%;
+    display: inline-block;
+  }
 
   .inside-photos {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

@@ -1,8 +1,36 @@
-import React from "react";
 import "./inside.scss";
+import { motion } from "framer-motion";
+import { useRef, useEffect, useState } from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
 function Inside() {
+  useEffect(() => {
+    setTimeout(() => {
+      gsap.to(".red-circle", {
+        scale: "1",
+        transformOrigin: "0,100%",
+        onComplete: foo,
+        onReverseComplete: bar,
+        scrollTrigger: {
+          id: "red",
+          trigger: ".red-circle",
+          scroller: "#main-container",
+          scrub: true,
+        },
+      });
+    });
+    ScrollTrigger.refresh();
+  }, []);
+  function foo() {
+    document.body.style.backgroundColor = "#ad807c";
+  }
+  function bar() {
+    document.body.style.backgroundColor = "#7cadb4";
+  }
   return (
     <section className="inside-container" data-scroll-section>
+      <span className="red-circle"></span>
       <h1
         className="inside-title"
         data-scroll
@@ -12,17 +40,17 @@ function Inside() {
         The Inside Look
       </h1>
       <div className="inside-photos">
-        <div>
-          <img src="2.jpg" alt="" />
+        <motion.div>
+          <motion.img whileHover={{ scale: 1.1 }} src="2.jpg" alt="" />
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
             officiis, ullam iusto id quae suscipit illum sapiente tempora minima
             quos tenetur, eaque deleniti eum dicta ad cupiditate velit in
             voluptates.
           </p>
-        </div>
+        </motion.div>
         <div>
-          <img src="3.jpg" alt="" />
+          <motion.img whileHover={{ scale: 1.1 }} src="3.jpg" alt="" />
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
             officiis

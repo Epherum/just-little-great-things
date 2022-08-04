@@ -1,0 +1,15 @@
+.red-circle-container {
+  position: relative;
+  .red-circle {
+    width: 142vmax;
+    height: 142vmax;
+    transform: scale(0);
+    z-index: -2;
+    position: absolute;
+    top: -1000px;
+    left: 0;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+}

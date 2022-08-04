@@ -1,18 +1,102 @@
 import { motion } from "framer-motion";
+import { useRef, useEffect, useState } from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
-function Title({ loco }) {
+function Title() {
   let fontcolor = "#F7D395";
+  useEffect(() => {
+    setTimeout(() => {
+      gsap.to(".hiii", {
+        x: -500,
+        y: -500,
+        duration: 4,
+        scrollTrigger: {
+          id: "circle",
+          trigger: ".hiii",
+          scroller: "#main-container",
+          toggleActions: "restart pause reverse reset",
 
+          scrub: 1,
+        },
+      });
+      gsap.to(".hiii2", {
+        x: -500,
+        y: -500,
+        duration: 4,
+        scrollTrigger: {
+          id: "circle",
+          trigger: ".hiii2",
+          scroller: "#main-container",
+          toggleActions: "restart pause reverse reset",
+
+          scrub: 2,
+        },
+      });
+      gsap.to(".hiii3", {
+        x: -500,
+        y: -500,
+        duration: 4,
+        scrollTrigger: {
+          id: "circle",
+          trigger: ".hiii3",
+          scroller: "#main-container",
+          toggleActions: "restart pause reverse reset",
+
+          scrub: 3,
+        },
+      });
+      gsap.to(".hiii4", {
+        x: -500,
+        y: -500,
+        duration: 4,
+        scrollTrigger: {
+          id: "circle",
+          trigger: ".hiii4",
+          scroller: "#main-container",
+          toggleActions: "restart pause reverse reset",
+
+          scrub: 4,
+        },
+      });
+      gsap.to(".hiii5", {
+        x: -500,
+        y: -500,
+        duration: 4,
+        scrollTrigger: {
+          id: "circle",
+          trigger: ".hiii5",
+          scroller: "#main-container",
+          toggleActions: "restart pause reverse reset",
+
+          scrub: 5,
+        },
+      });
+      gsap.to(".hiii6", {
+        x: -500,
+        y: -500,
+        duration: 4,
+        scrollTrigger: {
+          id: "circle",
+          trigger: ".hiii6",
+          scroller: "#main-container",
+          toggleActions: "restart pause reverse reset",
+
+          scrub: 6,
+        },
+      });
+    });
+    ScrollTrigger.refresh();
+  }, []);
   return (
     <div>
       <motion.div
-        initial={{ x: -800, y: -800 }}
-        whileInView={{ x: 0, y: 0 }}
-        transition={{ ease: "easeOut", duration: 1.9, delay: 2.6 }}
+        className="hiii"
         style={{
           position: "absolute",
-          bottom: "7vw",
-          right: "24vw",
+          bottom: "-12vw",
+          right: "8vw",
           height: "25.7vw",
           width: "25.7vw",
           backgroundColor: " rgba(255,255,255,.09)",
@@ -21,13 +105,11 @@ function Title({ loco }) {
       ></motion.div>
       {/* 2 */}
       <motion.div
-        initial={{ x: -800, y: -800 }}
-        whileInView={{ x: 0, y: 0 }}
-        transition={{ ease: "easeOut", duration: 1.8, delay: 2.4 }}
+        className="hiii2"
         style={{
           position: "absolute",
-          bottom: "4vw",
-          right: "19vw",
+          bottom: "-14vw",
+          right: "6vw",
           height: "25.7vw",
           width: "25.7vw",
           backgroundColor: " rgba(255,255,255,.09)",
@@ -36,13 +118,11 @@ function Title({ loco }) {
       ></motion.div>
       {/* 3 */}
       <motion.div
-        initial={{ x: -800, y: -800 }}
-        whileInView={{ x: 0, y: 0 }}
-        transition={{ ease: "easeOut", duration: 1.7, delay: 2.3 }}
+        className="hiii3"
         style={{
           position: "absolute",
-          bottom: "1vw",
-          right: "14vw",
+          bottom: "-16vw",
+          right: "4vw",
           height: "25.7vw",
           width: "25.7vw",
           backgroundColor: " rgba(255,255,255,.09)",
@@ -51,13 +131,11 @@ function Title({ loco }) {
       ></motion.div>
       {/* 4 */}
       <motion.div
-        initial={{ x: -800, y: -800 }}
-        whileInView={{ x: 0, y: 0 }}
-        transition={{ ease: "easeOut", duration: 1.6, delay: 2.2 }}
+        className="hiii4"
         style={{
           position: "absolute",
-          bottom: "-2vw",
-          right: "9vw",
+          bottom: "-18vw",
+          right: "2vw",
           height: "25.7vw",
           width: "25.7vw",
           backgroundColor: " rgba(255,255,255,.09)",
@@ -66,13 +144,11 @@ function Title({ loco }) {
       ></motion.div>
       {/* 5 */}
       <motion.div
-        initial={{ x: -800, y: -800 }}
-        whileInView={{ x: 0, y: 0 }}
-        transition={{ ease: "easeOut", duration: 1.5, delay: 2.1 }}
+        className="hiii5"
         style={{
           position: "absolute",
-          bottom: "-5vw",
-          right: "4vw",
+          bottom: "-20vw",
+          right: "0vw",
           height: "25.7vw",
           width: "25.7vw",
           backgroundColor: " rgba(255,255,255,.09)",
@@ -81,13 +157,11 @@ function Title({ loco }) {
       ></motion.div>
       {/* 6 */}
       <motion.div
-        initial={{ x: -800, y: -800 }}
-        whileInView={{ x: 0, y: 0 }}
-        transition={{ ease: "easeOut", duration: 1.4, delay: 2 }}
+        className="hiii6"
         style={{
           position: "absolute",
-          bottom: "-8vw",
-          right: "-1vw",
+          bottom: "-22vw",
+          right: "-2vw",
           height: "25.7vw",
           width: "25.7vw",
           backgroundColor: " rgba(255,255,255,.09)",

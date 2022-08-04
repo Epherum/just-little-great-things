@@ -1,9 +1,9 @@
 import Title from "./Title2";
 import "./featured.scss";
-function Featured({ loco }) {
+function Featured() {
   return (
     <section className="featured-container" data-scroll-section>
-      <Title loco={loco} />
+      <Title />
     </section>
   );
 }

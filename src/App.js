@@ -8,16 +8,17 @@ import Work from "./works/Work";
 import MoreWorks from "./more-works/MoreWorks";
 import Socials from "./socials/Socials";
 import useLocoScroll from "./hooks/useLocoScroll";
-
+import LastWork from "./works/LastWork";
+import RedCircle from "./red-circle/RedCircle";
 function App() {
-  const locoscroll = useLocoScroll();
+  useLocoScroll();
 
   return (
     <div id="main-container" data-scroll-container>
       <Navbar />
-      <Hero loco={locoscroll} />
+      <Hero />
       <Inside />
-      <Featured loco={locoscroll} />
+      <Featured />
       <Work
         number="01"
         date="Dec. 2019"
@@ -43,6 +44,7 @@ function App() {
         image="1.jpg"
         last="true"
       />
+      <LastWork />
       <MoreWorks />
       <Socials />
     </div>
