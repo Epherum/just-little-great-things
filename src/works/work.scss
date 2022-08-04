@@ -1,0 +1,82 @@
+.work-container {
+  position: relative;
+  height: 40vh;
+  margin: 0 100px;
+  img {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 300px;
+    width: 170px;
+  }
+  h1,
+  h2 {
+    color: #f7d395;
+  }
+
+  hr {
+    margin-bottom: 50px;
+  }
+  .work-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .work-date {
+      margin-top: -22px;
+      h2 {
+        font-family: Bodoni;
+        font-weight: 500;
+        font-size: 6vw;
+        margin-bottom: 50px;
+      }
+      p {
+        font-family: Roboto;
+      }
+    }
+    .work-details {
+      margin-right: 150px;
+      font-size: 1vw;
+      font-family: Roboto;
+      color: white;
+
+      h1 {
+        font-family: Bodoni;
+        font-weight: 500;
+        font-size: 6vw;
+        margin-bottom: 50px;
+      }
+    }
+  }
+  .model-flex {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+  }
+}
+.work-aboutus {
+  .inside-about-us {
+    display: flex;
+    margin: 150px 100px 400px 70px;
+    justify-content: space-between;
+    h1 {
+      font-family: Bodoni;
+      font-weight: 500;
+      font-size: 6vw;
+      color: #f7d395;
+    }
+    p {
+      font-size: 1vw;
+      font-family: Roboto;
+    }
+    .inside-about-us-p2 {
+      color: #f7d395;
+    }
+    .inside-about-us-p1 {
+      margin-left: 20px;
+    }
+    .inside-about-us-hr {
+      margin-bottom: 50px;
+      width: 50px;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.navbar-container {
+  margin: 25px 160px 0px 160px;
+  font-family: Roboto;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    .navbar-logo {
+      font-size: 2.5vw;
+      color: white;
+      letter-spacing: 2px;
+      font-weight: 400;
+      position: relative;
+      overflow: hidden;
+      width: 100px;
+
+      .logo-1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: Roboto;
+        font-size: 2.4rem;
+        pointer-events: all;
+        color: white;
+        text-decoration: none;
+      }
+      .logo-2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: Roboto;
+        font-size: 2.4rem;
+        pointer-events: all;
+        color: white;
+        text-decoration: none;
+      }
+    }
+    .navbar-creative {
+      margin-left: 250px;
+      font-size: 0.9vw;
+      font-weight: 500;
+    }
+    .navbar-touch {
+      font-size: 0.9vw;
+      margin-right: 100px;
+
+      font-weight: 500;
+    }
+  }
+}

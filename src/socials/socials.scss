@@ -1,0 +1,76 @@
+.socials-container {
+  position: relative;
+  margin: 0 100px;
+  margin-bottom: 500px;
+  font-family: Roboto;
+  font-size: 0.9vw;
+  color: white;
+  img {
+    width: 100px;
+  }
+  .socials-links {
+    list-style: none;
+    color: #f7d395;
+
+    font-family: Bodoni;
+    font-weight: 500;
+    font-size: 6vw;
+    text-decoration: underline;
+  }
+  .socials-img1 {
+    position: absolute;
+    top: -110px;
+    right: 100px;
+    width: 200px;
+  }
+  .socials-p1 {
+    position: absolute;
+    top: 10px;
+    right: 400px;
+    width: 16vw;
+    z-index: 2;
+    line-height: 20px;
+  }
+  .socials-img2 {
+    position: absolute;
+    top: 90px;
+    right: 580px;
+    width: 200px;
+    transform: rotate(-10deg);
+  }
+  .socials-p2 {
+    position: absolute;
+    top: 250px;
+    right: 140px;
+    width: 16vw;
+    z-index: 2;
+    line-height: 20px;
+  }
+  .socials-img3 {
+    position: absolute;
+    bottom: -0px;
+    right: 100px;
+    width: 130px;
+  }
+  .socials-img4 {
+    position: absolute;
+    bottom: -0px;
+
+    right: 250px;
+    width: 130px;
+  }
+  .socials-img5 {
+    position: absolute;
+    bottom: 50px;
+
+    right: 420px;
+    width: 150px;
+    transform: rotate(10deg);
+  }
+  .socials-p3 {
+    hr {
+      color: black;
+    }
+    color: black;
+  }
+}

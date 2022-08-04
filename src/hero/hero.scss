@@ -1,0 +1,47 @@
+.hero-container {
+  position: relative;
+  top: -3vw;
+  height: 320vh;
+  font-family: "Bodoni", sans-serif;
+  .bruh {
+    position: absolute;
+    top: 45vh;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 61%;
+    transform-origin: center;
+
+    overflow: hidden;
+  }
+
+  img {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .hero-marquee {
+    h1 {
+      overflow: hidden;
+      width: 200vw;
+      position: absolute;
+      top: 100vw;
+      left: -8vw;
+      font-family: Bodoni;
+      font-weight: 500;
+      font-size: 13vw;
+      color: #f7d395;
+
+      background-color: #7cadb4;
+      padding: 0 10vw 0 0;
+    }
+  }
+}

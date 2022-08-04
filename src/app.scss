@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+@font-face {
+  font-family: "Bodoni";
+  src: local("Bodoni"), url("./fonts/OPTIBodoniCampanileFive.otf");
+}
+
+body {
+  background-color: #7cadb4;
+}
+
+[data-scroll-container] {
+  perspective: 1px;
+}

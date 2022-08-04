@@ -1,0 +1,56 @@
+.inside-container {
+  position: relative;
+  font-family: Roboto;
+  .inside-title {
+    position: absolute;
+    top: -70px;
+    margin-left: 180px;
+    font-family: Bodoni;
+    font-weight: 500;
+    font-size: 9vw;
+    color: #f7d395;
+  }
+
+  .inside-photos {
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10vw;
+    img {
+      width: 70vh;
+      height: 95vh;
+    }
+    p {
+      margin-top: 50px;
+      margin-left: 50px;
+      width: 30vw;
+      color: white;
+      font-size: 1vw;
+    }
+  }
+  .inside-about-us {
+    display: flex;
+    margin: 0 130px;
+    justify-content: space-between;
+    h1 {
+      font-family: Bodoni;
+      font-weight: 500;
+      font-size: 6vw;
+      color: #f7d395;
+    }
+    p {
+      font-size: 1vw;
+    }
+    .inside-about-us-p2 {
+      color: #f7d395;
+    }
+    .inside-about-us-p1 {
+      margin-left: 20px;
+    }
+    .inside-about-us-hr {
+      margin-bottom: 50px;
+      width: 50px;
+    }
+  }
+}
