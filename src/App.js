@@ -9,7 +9,6 @@ import MoreWorks from "./more-works/MoreWorks";
 import Socials from "./socials/Socials";
 import useLocoScroll from "./hooks/useLocoScroll";
 import LastWork from "./works/LastWork";
-import RedCircle from "./red-circle/RedCircle";
 function App() {
   useLocoScroll();
 
